@@ -1,0 +1,197 @@
+/*---------------- 
+    Google Fonts
+----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+/*-----------------
+    Common Styles
+-----------------*/
+:root {
+    --surface-color: #fff;
+    --color-white: #fafafd;
+    --color-light-white: #ecf3ff;
+    --color-grey: #dadae2;
+    --color-dark-blue: #302ea7;
+    --color-light-blue: #4d4ad2;
+    --color-light-sky-blue: #deebff;
+    --color-primary: #ffcf25;
+    --tab-shadow: 1px 1px 10px #302ea7a9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    padding: 10px;
+    background-color: var(--color-white);
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*-----------------
+    Tab Styles
+-----------------*/
+.tab {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(var(--color-dark-blue), var(--color-light-blue));
+    box-shadow: var(--tab-shadow);
+    width: 20%;
+    height: auto;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tablinks {
+    font-size: 16px;
+    display: block;
+    background-color: inherit;
+    color: var(--color-light-sky-blue);
+    padding: 22px 16px;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px 10px 10px 0px;
+    text-align: center;
+}
+
+.tablinks:hover {
+    font-weight: 600;
+    background-color: var(--color-light-sky-blue);
+    color: var(--color-dark-blue);
+}
+
+.tablinks.active {
+    font-weight: 600;
+    background: linear-gradient(90deg, var(--color-light-white), var(--color-light-sky-blue));
+    color: var(--color-dark-blue);
+}
+
+/* About button i.e. Primary button */
+.btn-primary {
+    background-color: var(--color-primary);
+    font-size: 15px;
+    border: 2px solid var(--color-primary);
+    border-radius: 75px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 110px;
+    color: var(--color-dark-blue);
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: inherit;
+    color: var(--color-primary);
+}
+
+
+/*------------------------
+    Tab Content Styles
+------------------------*/
+.content {
+    width: 60%;
+}
+
+.tabcontent {
+    padding: 20px;
+    background-color: var(--surface-color);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 10px var(--color-grey);
+}
+
+/*---------------- 
+    Media Query
+----------------*/
+@media only screen and (max-width: 410px) {
+    body {
+        padding: 5px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .tab {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .tablinks,
+    .btn-primary {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 411px) and (max-width: 650px) {
+    body {
+        padding: 5px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .tab {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .tablinks,
+    .btn-primary {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 992px) {
+    body {
+        padding: 5;
+    }
+
+    .tab {
+        width: 30%;
+    }
+
+    .content {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    main {
+        max-width: 1440px;
+    }
+}

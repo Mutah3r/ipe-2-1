@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Routine</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/9434e80fbc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'sunday')">Sunday</button>
+            <button class="tablinks" onclick="openCity(event, 'monday')">Monday</button>
+            <button class="tablinks" onclick="openCity(event, 'tuesday')">Tuesday</button>
+            <button class="tablinks" onclick="openCity(event, 'wednesday')">Wednesday</button>
+            <button class="tablinks" onclick="openCity(event, 'thursday')">Thursday</button>
+            <button class="tablinks" onclick="openCity(event, 'resources')">Resources</button>
+            <button class="tablinks" onclick="openCity(event, 'exams')">Exam Dates</button>
+            <button class="btn-primary">About</button>
+        </div>
+
+        <div class="content">
+            <div id="sunday" class="tabcontent"> 
+                <h3>Sunday</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="monday" class="tabcontent d-none"> 
+                <h3>Monday</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="tuesday" class="tabcontent d-none"> 
+                <h3>Tuesday</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="wednesday" class="tabcontent d-none"> 
+                <h3>Wednesday</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="thursday" class="tabcontent d-none"> 
+                <h3>Thursday</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="resources" class="tabcontent d-none"> 
+                <h3>Resources</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div id="exams" class="tabcontent d-none"> 
+                <h3>Exam dates</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
