@@ -2,63 +2,291 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class Routine</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/styles.css">
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/9434e80fbc.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Class Routine</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="styles/styles.css">
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/9434e80fbc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <main>
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'sunday')">Sunday</button>
-            <button class="tablinks" onclick="openCity(event, 'monday')">Monday</button>
-            <button class="tablinks" onclick="openCity(event, 'tuesday')">Tuesday</button>
-            <button class="tablinks" onclick="openCity(event, 'wednesday')">Wednesday</button>
-            <button class="tablinks" onclick="openCity(event, 'thursday')">Thursday</button>
-            <button class="tablinks" onclick="openCity(event, 'resources')">Resources</button>
-            <button class="tablinks" onclick="openCity(event, 'exams')">Exam Dates</button>
-            <button class="btn-primary">About</button>
-        </div>
+	<main>
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'sunday')">Sunday</button>
+			<button class="tablinks" onclick="openCity(event, 'monday')">Monday</button>
+			<button class="tablinks" onclick="openCity(event, 'tuesday')">Tuesday</button>
+			<button class="tablinks" onclick="openCity(event, 'wednesday')">Wednesday</button>
+			<button class="tablinks" onclick="openCity(event, 'thursday')">Thursday</button>
+			<button class="tablinks" onclick="openCity(event, 'resources')">Resources</button>
+			<button class="tablinks" onclick="openCity(event, 'exams')">Exam Dates</button>
+			<button class="btn-primary">About</button>
+		</div>
 
-        <div class="content">
-            <div id="sunday" class="tabcontent"> 
-                <h3>Sunday</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div id="monday" class="tabcontent d-none"> 
-                <h3>Monday</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div id="tuesday" class="tabcontent d-none"> 
-                <h3>Tuesday</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div id="wednesday" class="tabcontent d-none"> 
-                <h3>Wednesday</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div id="thursday" class="tabcontent d-none"> 
-                <h3>Thursday</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div id="resources" class="tabcontent d-none"> 
-                <h3>Resources</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div id="exams" class="tabcontent d-none"> 
-                <h3>Exam dates</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
-    </main>
+		<div class="content">
+			<div id="sunday" class="tabcontent">
+				<h3>Sunday</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<!-- courses start -->
+				<div class="course">
+					<div class="course-preview gradient-1">
+						<h6>EEE 104G</h6>
+						<h2>Introduction to Electric and Electronic Circuit Lab</h2>
+						<a href="#">IICT</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Not Assigned Yet</h2>
+						<button class="btn btn-1">08:00 AM - 10:50 AM</button>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-2">
+						<h6>IPE 221</h6>
+						<h2>Mechanics of Solids</h2>
+						<a href="#">R-412C</i></a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Syeda Kamrun Nahar</h2>
+						<button class="btn btn-2">11:00 AM - 12:50 PM</button>
 
-    <!-- JavaScript -->
-    <script src="js/script.js"></script>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-3">
+						<h6>IPE 242</h6>
+						<h2>Computer Aided Design - I</h2>
+						<a href="#">R-411C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Chowdhury Luthfur Rahman</h2>
+						<button class="btn btn-3">02:00 PM - 04:50 PM</button>
+					</div>
+				</div>
+				<!-- courses end -->
+			</div>
+			<div id="monday" class="tabcontent d-none">
+				<h3>Monday</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<!-- courses start -->
+				<div class="course">
+					<div class="course-preview gradient-4">
+						<h6>ECO 105</h6>
+						<h2>Principles of Economics</h2>
+						<a href="#">R-412C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Not Assigned Yet</h2>
+						<button class="btn btn-4">08:00 AM - 08:50 AM</button>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-5">
+						<h6>IPE 222</h6>
+						<h2>Mechanics of Solid Sessional</h2>
+						<a href="#">Workshop</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Dr. Muhammad Mahamood Hasan</h2>
+						<button class="btn btn-5">09:00 AM - 11:50 AM</button>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-6">
+						<h6>MAT 207G</h6>
+						<h2>Vector, Matrices and Laplace Transformation</h2>
+						<a href="#">R-412C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Not Assigned Yet</h2>
+						<button class="btn btn-6">02:00 PM - 02:50 PM</button>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-7">
+						<h6>IPE 223</h6>
+						<h2>Thermodynamics and Heat Transfer</h2>
+						<a href="#">R-412C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Mohammed Abdul Karim</h2>
+						<button class="btn btn-7">03:00 PM - 04:50 PM</button>
+					</div>
+				</div>
+				<!-- courses end -->
+			</div>
+			<div id="tuesday" class="tabcontent d-none">
+				<h3>Tuesday</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<!-- courses start -->
+				<div class="course">
+					<div class="course-preview gradient-7">
+						<h6>IPE 223</h6>
+						<h2>Thermodynamics and Heat Transfer</h2>
+						<a href="#">R-412C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Mohammed Abdul Karim</h2>
+						<button class="btn btn-7">10:00 AM - 10:50 AM</button>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-4">
+						<h6>ECO 105</h6>
+						<h2>Principles of Economics</h2>
+						<a href="#">R-412C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Not Assigned Yet</h2>
+						<button class="btn btn-4">11:00 AM - 11:50 AM</button>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-2">
+						<h6>IPE 221</h6>
+						<h2>Mechanics of Solids</h2>
+						<a href="#">R-412C</i></a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Syeda Kamrun Nahar</h2>
+						<button class="btn btn-2">12:00 AM - 12:50 PM</button>
+
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-8">
+						<h6>IPE 244</h6>
+						<h2>Machine Drawing</h2>
+						<a href="#">R-418C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Dr. Ahmed Sayem</h2>
+						<button class="btn btn-8">02:00 PM - 04:50 PM</button>
+					</div>
+				</div>
+				<!-- courses end -->
+			</div>
+			<div id="wednesday" class="tabcontent d-none">
+				<h3>Wednesday</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<!-- courses start -->
+				<div class="course">
+					<div class="course-preview gradient-6">
+						<h6>MAT 207G</h6>
+						<h2>Vector, Matrices and Laplace Transformation</h2>
+						<a href="#">R-412C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Not Assigned Yet</h2>
+						<button class="btn btn-6">09:00 AM - 09:50 AM</button>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-9">
+						<h6>IPE 224</h6>
+						<h2>Engineering Materials Sessional</h2>
+						<a href="#">Workshop</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Muhammad Abdus Samad</h2>
+						<button class="btn btn-9">10:00 AM - 12:50 PM</button>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-7">
+						<h6>IPE 223</h6>
+						<h2>Thermodynamics and Heat Transfer</h2>
+						<a href="#">R-412C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Mohammed Abdul Karim</h2>
+						<button class="btn btn-7">02:00 PM - 02:50 PM</button>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-10">
+						<h6>EEE 103G</h6>
+						<h2>Introduction to Electric and Electronic Circuit Theory</h2>
+						<a href="#">R-412C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Not Assigned Yet</h2>
+						<button class="btn btn-10">03:00 AM - 03:50 AM</button>
+					</div>
+				</div>
+				<!-- courses end -->
+			</div>
+			<div id="thursday" class="tabcontent d-none">
+				<h3>Thursday</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<!-- courses start -->
+				<div class="course">
+					<div class="course-preview gradient-4">
+						<h6>ECO 105</h6>
+						<h2>Principles of Economics</h2>
+						<a href="#">R-412C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Not Assigned Yet</h2>
+						<button class="btn btn-4">09:00 AM - 09:50 AM</button>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-6">
+						<h6>MAT 207G</h6>
+						<h2>Vector, Matrices and Laplace Transformation</h2>
+						<a href="#">R-409C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Not Assigned Yet</h2>
+						<button class="btn btn-6">11:00 AM - 11:50 AM</button>
+					</div>
+				</div>
+				<div class="course">
+					<div class="course-preview gradient-10">
+						<h6>EEE 103G</h6>
+						<h2>Introduction to Electric and Electronic Circuit Theory</h2>
+						<a href="#">R-412C</a>
+					</div>
+					<div class="course-info">
+						<h6>Course Teacher</h6>
+						<h2>Not Assigned Yet</h2>
+						<button class="btn btn-10">12:00 PM - 12:50 PM</button>
+					</div>
+				</div>
+				<!-- courses end -->
+			</div>
+			<div id="resources" class="tabcontent d-none">
+				<h3>Resources</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+			<div id="exams" class="tabcontent d-none">
+				<h3>Exam dates</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+			</div>
+		</div>
+	</main>
+
+	<!-- JavaScript -->
+	<script src="js/script.js"></script>
 </body>
 
 </html>
